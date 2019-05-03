@@ -38,4 +38,8 @@ func main(){
 	str = strconv.FormatBool(b2)
 	fmt.Printf("str type %T str = %q\n", str, str)
 
+	var num5 int = 4567
+	str = strconv.Itoa(num5)
+	fmt.Printf("str type iss %T str = %q", str, str)
+
 }
