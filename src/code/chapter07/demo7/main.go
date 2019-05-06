@@ -18,6 +18,7 @@ func main(){
 	}(10, 20)
 	fmt.Println(res1)
 
+	// 匿名函数 方式2，赋值给一个变量
 	a := func(n1 int, n2 int) int {
 		return n2 - n1
 	}
