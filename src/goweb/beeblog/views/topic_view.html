@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  {{template "header"}}
+  <title>{{.Topic.Title}} - 我的beeblog博客</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      {{template "navbar" .}}
+    </div>
+  </nav>
+  <div class="container">
+    {{with .Topic}}
+    <h1>{{.Title}}</h1>
+    <a href="/topic/modify/{{.Id}}" class="btn btn-default">修改文章</a><br/>
+    {{.Content}}
+    {{end}}
+
+  </div>
+
+
+  <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+  
+</body>
+
+</html>
